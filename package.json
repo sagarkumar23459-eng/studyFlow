@@ -20,5 +20,8 @@
     "monorepo",
     "pnpm-workspace"
   ],
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
 }
