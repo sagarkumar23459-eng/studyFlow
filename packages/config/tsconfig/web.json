@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "StudyFlow Web",
   "extends": "./base.json",
   "compilerOptions": {
     "lib": [
@@ -8,7 +7,7 @@
       "DOM.Iterable",
       "ES2022"
     ],
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "noEmit": true
   }
 }

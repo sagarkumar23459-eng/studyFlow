@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "StudyFlow Base",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "declaration": true,
@@ -14,7 +13,6 @@
     "module": "NodeNext",
     "moduleDetection": "force",
     "moduleResolution": "NodeNext",
-    "newLine": "lf",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
