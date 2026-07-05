@@ -4,7 +4,19 @@
   "private": true,
   "description": "Shared StudyFlow configuration presets.",
   "type": "module",
-  "main": "./src/index.js",
+  "exports": {
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/web": "./tsconfig/web.json",
+    "./tsconfig/server": "./tsconfig/server.json",
+    "./eslint/base": "./eslint/base.mjs",
+    "./prettier/base": "./prettier/base.cjs"
+  },
+  "files": [
+    "README.md",
+    "tsconfig",
+    "eslint",
+    "prettier"
+  ],
   "scripts": {
     "dev": "echo \"@studyflow/config: no development task configured yet\"",
     "build": "echo \"@studyflow/config: no build configured yet\"",

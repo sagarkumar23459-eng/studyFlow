@@ -1,0 +1,24 @@
+{
+  "name": "@studyflow/tsconfig",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared TypeScript configuration presets for StudyFlow.",
+  "type": "module",
+  "files": [
+    "base.json",
+    "web.json",
+    "server.json"
+  ],
+  "exports": {
+    "./base.json": "./base.json",
+    "./web.json": "./web.json",
+    "./server.json": "./server.json"
+  },
+  "scripts": {
+    "dev": "echo \"@studyflow/tsconfig: no development task configured\"",
+    "build": "echo \"@studyflow/tsconfig: configuration package only\"",
+    "lint": "echo \"@studyflow/tsconfig: no lint configured\"",
+    "format": "echo \"@studyflow/tsconfig: no formatter configured\"",
+    "clean": "echo \"@studyflow/tsconfig: cleaned\""
+  }
+}
