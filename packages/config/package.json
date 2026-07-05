@@ -1,0 +1,15 @@
+{
+  "name": "@studyflow/config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared StudyFlow configuration presets.",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "echo \"@studyflow/config: no development task configured yet\"",
+    "build": "echo \"@studyflow/config: no build configured yet\"",
+    "lint": "echo \"@studyflow/config: no lint configured yet\"",
+    "format": "echo \"@studyflow/config: no formatter configured yet\"",
+    "clean": "echo \"@studyflow/config: cleaned\""
+  }
+}

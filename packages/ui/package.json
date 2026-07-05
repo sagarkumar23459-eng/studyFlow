@@ -1,0 +1,15 @@
+{
+  "name": "@studyflow/ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared StudyFlow UI primitives and components.",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "echo \"@studyflow/ui: no development task configured yet\"",
+    "build": "echo \"@studyflow/ui: no build configured yet\"",
+    "lint": "echo \"@studyflow/ui: no lint configured yet\"",
+    "format": "echo \"@studyflow/ui: no formatter configured yet\"",
+    "clean": "echo \"@studyflow/ui: cleaned\""
+  }
+}

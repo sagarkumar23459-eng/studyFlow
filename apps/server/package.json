@@ -1,0 +1,14 @@
+{
+  "name": "@studyflow/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "StudyFlow server application workspace.",
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"@studyflow/server: no server framework configured yet\"",
+    "build": "echo \"@studyflow/server: no build configured yet\"",
+    "lint": "echo \"@studyflow/server: no lint configured yet\"",
+    "format": "echo \"@studyflow/server: no formatter configured yet\"",
+    "clean": "echo \"@studyflow/server: cleaned\""
+  }
+}

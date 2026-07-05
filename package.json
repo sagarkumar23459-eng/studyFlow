@@ -1,0 +1,24 @@
+{
+  "name": "studyflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production-ready pnpm monorepo architecture for StudyFlow.",
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "clean": "node scripts/clean.mjs"
+  },
+  "keywords": [
+    "studyflow",
+    "monorepo",
+    "pnpm-workspace"
+  ],
+  "license": "UNLICENSED"
+}
