@@ -2,6 +2,8 @@ import { Navbar } from "@/components/layout/navbar";
 
 import { Container } from "@/components/layout/container";
 
+import { AppButton } from "@/components/common/button";
+
 export default function HomePage() {
   return (
     <>
@@ -15,6 +17,9 @@ export default function HomePage() {
           <p className="mt-6 text-lg text-slate-600">
             Your AI-powered learning platform.
           </p>
+          <div className="flex min-h-screen items-center justify-center">
+  <AppButton>Get Started</AppButton>
+</div>
         </Container>
       </main>
     </>
