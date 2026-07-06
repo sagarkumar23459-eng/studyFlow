@@ -1,0 +1,33 @@
+import { Container } from "@/components/layout/container";
+import { HeroBadge } from "./hero-badge";
+import { HeroTitle } from "./hero-title";
+import { HeroDescription } from "./hero-description";
+import { HeroActions } from "./hero-actions";
+import { HeroPreview } from "./hero-preview";
+
+export function Hero() {
+  return (
+    <section className="relative overflow-hidden py-28">
+      {/* Background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 via-white to-white" />
+
+      <div className="absolute left-1/2 top-0 -z-10 h-[550px] w-[550px] -translate-x-1/2 rounded-full bg-sky-400/20 blur-3xl" />
+
+      <Container>
+        <div className="mx-auto flex max-w-7xl flex-col items-center text-center">
+          <HeroBadge />
+
+          <HeroTitle />
+
+          <HeroDescription />
+
+          <HeroActions />
+
+          <div className="mt-20 w-full">
+            <HeroPreview />
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
