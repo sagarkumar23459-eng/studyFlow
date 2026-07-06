@@ -5,10 +5,21 @@
   "description": "StudyFlow web application workspace.",
   "type": "module",
   "scripts": {
-    "dev": "echo \"@studyflow/web: no web framework configured yet\"",
-    "build": "echo \"@studyflow/web: no build configured yet\"",
-    "lint": "echo \"@studyflow/web: no lint configured yet\"",
-    "format": "echo \"@studyflow/web: no formatter configured yet\"",
-    "clean": "echo \"@studyflow/web: cleaned\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "clean": "node -e \"require('node:fs').rmSync('.next', { recursive: true, force: true })\""
+  },
+  "dependencies": {
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3"
   }
 }
