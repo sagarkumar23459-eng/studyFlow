@@ -1,13 +1,17 @@
+import { Container } from "@/components/layout/container";
+
 export default function HomePage() {
   return (
-    <main className="page-shell">
-      <section className="hero">
-        <p className="eyebrow">StudyFlow</p>
-        <h1>Plan focused study sessions without losing momentum.</h1>
-        <p className="lede">
-          A production-ready Next.js workspace is now ready for the StudyFlow web app.
+    <main className="py-20">
+      <Container>
+        <h1 className="text-5xl font-bold">
+          Welcome to StudyFlow 🚀
+        </h1>
+
+        <p className="mt-6 text-lg text-gray-500">
+          Your AI-powered learning platform.
         </p>
-      </section>
+      </Container>
     </main>
   );
 }
