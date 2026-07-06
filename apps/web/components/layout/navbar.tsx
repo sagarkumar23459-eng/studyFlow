@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { Logo } from "@/components/common/logo";
+import { NAVIGATION } from "@/constants/navigation";
 
 export function Navbar() {
   return (
@@ -11,27 +12,16 @@ export function Navbar() {
          <Logo />
 
           <div className="flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Home
-            </Link>
-
-            <Link
-              href="/about"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              About
-            </Link>
-
-            <Link
-              href="/contact"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Contact
-            </Link>
-          </div>
+  {NAVIGATION.map((item) => (
+    <Link
+      key={item.href}
+      href={item.href}
+      className="text-sm font-medium text-slate-700 transition-colors hover:text-blue-600"
+    >
+      {item.label}
+    </Link>
+  ))}
+</div>
         </nav>
       </Container>
     </header>
