@@ -6,6 +6,12 @@
     "allowJs": false,
     "module": "ESNext",
     "moduleResolution": "Bundler",
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+
     "plugins": [
       {
         "name": "next"
