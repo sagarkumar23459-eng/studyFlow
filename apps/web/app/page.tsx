@@ -4,16 +4,18 @@ import { Journey } from "@/components/landing/journey";
 import { Features } from "@/components/landing/features";
 import { AIShowcase } from "@/components/landing/ai-showcase";
 import { Testimonials } from "@/components/landing/testimonials";
+import { Pricing } from "@/components/landing/pricing";
 
 export default function HomePage() {
   return (
-    <>
+   <>
   <Navbar />
   <Hero />
   <Journey />
   <Features />
   <AIShowcase />
   <Testimonials />
-    </>
+  <Pricing />
+</>
   );
 }
