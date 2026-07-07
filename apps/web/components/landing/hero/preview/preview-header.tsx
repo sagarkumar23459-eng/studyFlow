@@ -1,40 +1,43 @@
-import { Bell, Search } from "lucide-react";
+import { Bell, Search, Sparkles } from "lucide-react";
 
 export function PreviewHeader() {
   return (
-    <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-6">
+    <header className="flex items-center justify-between border-b border-slate-200 bg-white/80 px-8 py-5 backdrop-blur-xl">
       {/* Left */}
       <div>
-        <h2 className="text-lg font-bold text-slate-900">
-          Study Dashboard
-        </h2>
-
         <p className="text-sm text-slate-500">
-          Welcome back, Sagar 👋
+          Welcome back 👋
         </p>
+
+        <h2 className="mt-1 text-2xl font-bold tracking-tight text-slate-900">
+          Continue Learning
+        </h2>
       </div>
 
       {/* Right */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
         {/* Search */}
-        <div className="flex w-72 items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+        <div className="hidden items-center gap-2 rounded-full bg-slate-100 px-5 py-2 md:flex">
           <Search className="h-4 w-4 text-slate-400" />
 
-          <input
-            type="text"
-            placeholder="Search notes..."
-            className="w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
-          />
+          <span className="text-sm text-slate-400">
+            Search notes...
+          </span>
         </div>
 
+        {/* AI */}
+        <button className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-indigo-600 text-white shadow-md transition-all duration-300 hover:scale-105">
+          <Sparkles className="h-5 w-5" />
+        </button>
+
         {/* Notification */}
-        <button className="rounded-xl border border-slate-200 p-2 transition hover:bg-slate-100">
+        <button className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:bg-slate-100">
           <Bell className="h-5 w-5 text-slate-600" />
         </button>
 
         {/* Avatar */}
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 font-semibold text-white">
-          S
+        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-indigo-600 text-sm font-bold text-white shadow-md">
+          SK
         </div>
       </div>
     </header>
