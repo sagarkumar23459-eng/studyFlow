@@ -2,23 +2,19 @@
 // Keep this import as the very first line.
 import "./globals.css";
 
+import { ClerkProvider } from "@clerk/nextjs";
 import type { ReactNode } from "react";
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
-import { APP } from "@/constants/app";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-export const metadata = {
-  title: APP.name,
-  description: APP.description,
-};
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
-    <html lang="en" className={cn("min-h-screen bg-background text-foreground", "font-sans", geist.variable)}>
-      <body className="min-h-screen antialiased">
-  {children}
-</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }

@@ -1,0 +1,1 @@
+export { QuizPreviewCard } from "./quiz-preview-card";
